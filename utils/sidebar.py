@@ -72,7 +72,6 @@ def show_sidebar_options():
         key="daterange",
     )
 
-    st.write("DB username:", st.secrets["github_repo"])    
     # Use an appropriate radius unit depending on location
     radius_unit = location["radius_unit"]
     st.session_state.suggested_radius = location
