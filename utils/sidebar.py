@@ -88,7 +88,7 @@ def show_sidebar_options():
         key="radius",
     )
 
-@st.cache_data
+
 def fetch_location_insight_data():
 
     r = requests.get(
