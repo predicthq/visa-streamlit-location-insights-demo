@@ -1,4 +1,4 @@
-# PredictHQ Industry Demo App
+# PredictHQ Location Insights Demo App
 
 This is a [Streamlit](https://streamlit.io) app designed to show how easy it is to get up and running quickly with the PredictHQ APIs. Please feel free to take a copy of this code and modify it for your own use, or take the bits you need to make your integration with PredictHQ easier and faster. This streamlit application automatically fetches any Location Insights that you have configured, and uses the industry you have defined there for the suggested radius.
 
