@@ -10,7 +10,7 @@ Learn more about integrating with the PredictHQ APIs at [https://docs.predicthq.
 To run the app locally:
 
 ```
-$ cd streamlit-integrated-industry-demo
+$ cd streamlit-integrated-location-insights-demo
 $ python3 -m venv .venv
 $ 
 $ source .venv/bin/activate
