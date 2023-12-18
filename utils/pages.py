@@ -4,7 +4,7 @@ import streamlit as st
 def set_page_config(title=""):
     st.set_page_config(
         page_title=title if len(title) > 0 else "PredictHQ Mastercard Sydney Demo App",
-        page_icon="🍔",
+        page_icon="🏨",
         layout="wide",
         initial_sidebar_state="expanded",
         menu_items={

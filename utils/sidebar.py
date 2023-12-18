@@ -20,7 +20,7 @@ def show_sidebar_options():
                 break
 
     location = st.sidebar.selectbox(
-        "Location",
+        "Hotel Location",
         locations,
         index=index,
         format_func=lambda x: x["name"],
