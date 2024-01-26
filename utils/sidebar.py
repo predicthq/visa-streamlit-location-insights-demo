@@ -102,9 +102,15 @@ def fetch_location_insight_data():
     json = r.json()
     results = []
     for location_insight in json["locations"]:
+        address = ""
+        name = ""
+        if "name" in location_insight : name = location_insight["name"]
+        else: name = str(location_insight["geojson"]["geometry"]["coordinates"][1]) +", "+ str(location_insight["geojson"]["geometry"]["coordinates"][0])
+        if "formatted_address" in location_insight : address = location_insight["formatted_address"]
+        else: address = name
         results.append({"id":location_insight["location_id"],
-                        "name": location_insight["name"],
-                        "address": location_insight["formatted_address"],
+                        "name": name,
+                        "address" : address,
                         "lat": location_insight["geojson"]["geometry"]["coordinates"][1],
                         "lon": location_insight["geojson"]["geometry"]["coordinates"][0],
                         "radius_unit": location_insight["geojson"]["properties"]["radius_unit"],
